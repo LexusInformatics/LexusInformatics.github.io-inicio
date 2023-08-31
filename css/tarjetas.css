@@ -1,0 +1,134 @@
+
+.tarjeta {
+    width: 240px;
+    height: 300px;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 7px;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.tarjeta .tarjeta-imagen {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagen/IA.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tarjeta .tarjeta-description{
+margin: 2%;
+    text-align: justify;
+}
+.tarjeta .tarjeta-imagenFrondEnd {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagen/fronEn.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tarjeta .tarjeta-imagenmecatronica {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagen/iot.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tarjeta .tarjeta-imagenback {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagen/back.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tarjeta .tarjeta-imagenonline {
+    width: 100%;
+    height: 100%;
+    background-image: url("../imagen/online.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tarjeta .tarjeta-contenido {
+    background-color: rgba(0, 0, 0, .6);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    border-radius: 7px;
+    transform: translateY(100%);
+    transition: 400ms ease;
+}
+
+.tarjeta .tarjeta-contenido .tarjeta-boton {
+    color: white;
+    background: #396afc;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2948ff, #396afc);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2948ff, #396afc);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px;
+    outline: 3px solid #2948ff;
+    outline-offset: 4px;
+}
+
+.tarjeta-boton {
+    cursor: pointer;
+}
+
+.tarjeta .tarjeta-imagen:hover+.tarjeta-contenido,
+.tarjeta-contenido:hover {
+    transform: translateY(0);
+}
+
+.tarjeta .tarjeta-imagenFrondEnd:hover+.tarjeta-contenido,
+.tarjeta-contenido:hover {
+    transform: translateY(0);
+}
+
+.tarjeta .tarjeta-imagenmecatronica:hover+.tarjeta-contenido,
+.tarjeta-contenido:hover {
+    transform: translateY(0);
+}
+
+.tarjeta .tarjeta-imagenback:hover+.tarjeta-contenido,
+.tarjeta-contenido:hover {
+    transform: translateY(0);
+}
+
+.tarjeta .tarjeta-imagenonline:hover+.tarjeta-contenido,
+.tarjeta-contenido:hover {
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1000px) {
+    .tarjeta {
+        width: 90%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

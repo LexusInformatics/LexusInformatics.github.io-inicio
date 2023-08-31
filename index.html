@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <title>Lexus</title>
+ 
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/tarjetas.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <script type="text/javascript" src="./js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+<body>
+    <div class="contedor_general">
+        <div class="conteuno"><img src="./imagen/logo.png" /></div>
+        <div class="contedos">
+            <div class="tarjeta">
+                <div class="tarjeta-imagen"></div>
+                <div class="tarjeta-contenido">
+                    <h1 class="tarjeta-titulo">IA</h1>
+                    <p class="tarjeta-description">Sumérgete en el futuro con nuestras soluciones de IA, diseñadas para optimizar procesos y llevar tu empresa a un nuevo nivel.</p>
+                    <button id="ia" class="tarjeta-boton">Ver más!</button>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-imagenmecatronica"></div>
+                <div class="tarjeta-contenido">
+                    <h1 class="tarjeta-titulo">IoT</h1>
+                    <p class="tarjeta-description">El futuro es ahora con nuestras soluciones de IoT, donde la interconexión de dispositivos abre un mundo de posibilidades para tu negocio.</p>
+                    <button id="iot" class="tarjeta-boton">Ver más!</button>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-imagenFrondEnd"></div>
+                <div class="tarjeta-contenido">
+                    <h1 class="tarjeta-titulo">Front-end</h1>
+                    <p class="tarjeta-description">Convierte tu visión en realidad con nuestros diseños Front-end que combinan creatividad y tecnología de manera impecable.</p>
+                    <button id="fron" class="tarjeta-boton">Ver más!</button>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-imagenback"></div>
+                <div class="tarjeta-contenido">
+                    <h1 class="tarjeta-titulo">Backend </h1>
+                    <p class="tarjeta-description">Arquitectura inteligente para resultados brillantes: Nuestro desarrollo Backend optimiza procesos y potencia la eficiencia.</p>
+                    <button id="back" class="tarjeta-boton">Ver más!</button>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="tarjeta-imagenonline"></div>
+                <div class="tarjeta-contenido">
+                    <h1 class="tarjeta-titulo">Online</h1>
+                    <p class="tarjeta-description">El conocimiento está al alcance de tus manos: Únete a nuestras clases en línea y desbloquea tu potencial.</p>
+                    <button id="onli" class="tarjeta-boton">Ver más!</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="footers">
+
+            <footer class="footer">
+                
+                <div class="footer-contacto">
+                    <div class="conte_pl"><img clas="ico" src="./imagen/whatsapp.png">
+                        <a href="https://wa.me/+593984029252?text=Hola Lexus Informatics, espero que estén bien. Me gustaría obtener información sobre los servicios que ofrecen, estoy interesado/a en [breve descripción de lo que busca].">
+                            <p>0984029252</p>
+                        </a>
+                    </div>
+                    <div class="conte_pl"><img clas="ico" src="./imagen/facebook.png" width="10%">
+                        <a href="https://www.facebook.com/profile.php?id=100064005913938">Web accessibility company</a>
+                    </div>
+                    <div class="conte_pl"><img clas="ico" src="./imagen/iconfinde.png">
+                        <a href="http://instagram.com/lexusinformatics"><p>lexusinformatics</p></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#"> Aviso legal</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Términos y condiciones</a>
+                </div>
+            </footer>
+
+
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="contendor_cerarr"><button id="close">X</button></div>
+             <div class="contenedor_etiqueta">
+                <h1 id="titulo" class="titulo">Inteligencia Artificial</h1>
+                <div class="contendor_des">
+                    <div id="descri">
+                        <div id="texto_Ecabezado" class="titulo_seg"></div>
+                          <div class="contedor_lista">                       
+                            <ul id="lista"></ul>                       
+                          </div> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

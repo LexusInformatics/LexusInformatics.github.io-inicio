@@ -1,0 +1,100 @@
+@import url('https://fonts.cdnfonts.com/css/trial-riegraf');
+
+.modal {
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(34, 33, 33, 0.6);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    margin-top: 3%;
+    backdrop-filter: blur(10px);
+    color: white;
+    display: none;
+    font-family: 'TRIAL Riegraf', sans-serif;
+}
+
+.contendor_cerarr {
+    width: 100%;
+    height: auto;
+    text-align: right;
+}
+
+.contendor_cerarr button {
+    color: white;
+    font-size: 2vw;
+    padding: 1%;
+    border: 0px;
+    background: transparent;
+}
+
+.contendor_cerarr button:hover {
+    cursor: pointer;
+}
+
+.contendor_img {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor_etiqueta {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.contendor_des {
+    width: 98%;
+    height: auto;
+    padding: 1%;
+    border-top: 1px white solid;
+
+
+}
+.contedor_lista{ 
+    width: 100%; height: 400px;
+    text-align: left; font-size: 1.5vw;
+    overflow:auto;
+    box-sizing: border-box;
+    padding:0 1rem;
+
+}
+
+.titulo{
+        font-size: 2vw; font-weight: 600;}
+         .titulo_seg{font-size: 2vw; padding: 1%;}
+
+       
+        /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+    
+    .contedor_lista::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    
+    .contedor_lista::-webkit-scrollbar:vertical {
+        width:10px;
+    }
+    
+    .contedor_lista::-webkit-scrollbar-button:increment,.contedor_lista::-webkit-scrollbar-button {
+        display: none;
+    } 
+    
+    .contedor_lista::-webkit-scrollbar:horizontal {
+        height: 10px;
+    }
+
+        @media only screen and (max-width: 1000px) {
+        .modal {width: 100%;}
+        .titulo{
+            font-size: 5vw; font-weight: 600;}
+            .titulo_seg{font-size: 4vw; padding: 1%;}
+            .contedor_lista {font-size: 3vw;}
+            .contendor_cerarr button {font-size: 5vw;}
+
+          
+        }
